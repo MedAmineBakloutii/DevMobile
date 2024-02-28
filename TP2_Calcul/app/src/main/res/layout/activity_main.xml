@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pandadev"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginVertical="30dp">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Result:"
+        android:textSize="18sp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="20dp"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/firstValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:hint="First Value"
+        android:imeOptions="actionDone"
+        android:inputType="numberDecimal"
+        android:textAllCaps="false"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/secondValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Second Value"
+        android:ems="10"
+        android:textSize="16sp"
+        android:imeOptions="actionDone"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="15dp"
+        android:inputType="numberDecimal"/>
+
+    <RadioGroup
+        android:id="@+id/operations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginVertical="20dp">
+
+
+        <RadioButton
+            android:id="@+id/plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@color/xx"
+            android:drawableTop="@drawable/plus"
+            android:layout_marginHorizontal="20dp"/>
+
+        <RadioButton
+            android:id="@+id/minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@color/xx"
+            android:drawableTop="@drawable/minus"
+            android:layout_marginHorizontal="20dp"/>
+
+        <RadioButton
+            android:id="@+id/multiply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@color/xx"
+            android:drawableTop="@drawable/multiply"
+            android:layout_marginHorizontal="20dp"/>
+
+        <RadioButton
+            android:id="@+id/devide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@color/xx"
+            android:drawableTop="@drawable/devide"
+            android:layout_marginHorizontal="20dp"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/calculateBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="20dp"/>
+
+
+
+</LinearLayout>
+
+
